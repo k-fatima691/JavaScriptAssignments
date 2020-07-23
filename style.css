@@ -1,0 +1,35 @@
+.main{
+    margin-top: 100px;
+    display: inline-block;
+}
+.mob1{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.mob2{
+    margin-top: -280px;
+    margin-left: 230px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.mob3{
+    margin-top: -280px;
+    margin-left: 480px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.mob4{
+    margin-top: -290px;
+    margin-left: 760px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.image1{
+    width: 70%;
+    height: 70%;
+}
+#more {display: none;}
+.submitBtn{
+    margin-left: 210%;
+    margin-right: 15%;
+}
