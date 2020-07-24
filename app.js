@@ -1291,58 +1291,22 @@
 // }
 // main()
 //question 5
-//sometimes error
-// const str = "This is a string";
-// const char = "r";
-
-// function findCharIndex(str, char) {
-//     for (let [index, val] of [...str].entries()) {
-//         if (val === char) {
-//             return index;
-//         }
+// var a = "The quick brown fox jumps over the lazy dog";
+// var b = prompt("Enter character");
+// for (var i = 0;i<a.length;i++){
+//     if(a[i] == b){
+//         alert(i)
+//         break
 //     }
 // }
-
-// console.log(findCharIndex(str, char));
 // question 6
 // var string = ["The quick brown fox jumps"];
-
 // string = string.map(function (str) {
 //     return str.replace(/[aeiou]/g, '');
 // });
 // console.log(string);
 
-// question 7
-//not working
-function findOccurrences() {
-var str = "Pleases read this application and give me gratuity";
-var count = 0;
-let haveSeenVowel = false;
 
-    for (const letter of str.toLowerCase()) {
-        switch (letter) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                {
-                    if (haveSeenVowel) {
-                        count++;
-                        haveSeenVowel = false;
-                    } else {
-                        haveSeenVowel = true;
-                    }
-                    break;
-                }
-            default:
-                haveSeenVowel = false
-        }
-    }
-
-    return count
-}
-document.write(findOccurrences())
 // question 8
 // var distance = +prompt("Enter the distance b/w two cities", "Enter the distance in kilometers")
 // var distanceInMeters = distance * 1000;        
@@ -1356,8 +1320,7 @@ document.write(findOccurrences())
 // question 9
 //couldnot  understand the question
 // question 10
-//couldnot  understand the question
-
+//tried to put logic but didnot work
 // Events
 // Chapter 43-48
 //question 1
@@ -1394,21 +1357,112 @@ document.write(findOccurrences())
 //Chapter 49-52
 //question 1
 //not working
-// function submitForm() {
+// function display() {
 //     var firstName = document.getElementById("firstname")
 //     document.write(firstName.value)
 //     var lastName = document.getElementById("lastname")
 //     document.write(lastName.value)
 //     var email = document.getElementById("emailid")
-//     document.write(email.value) 
+//     document.write(email.value)    
 //  }
-
-
 //question 2
-//old sentence disappearing
 // function readFunction(){
-//     var text ="making it easier to read and understand."
+//     var text =" making it easier to read and understand.I myself have written many paragraphs about importance of paragraphs."
 //     var para = document.getElementById("para")
-//     para.innerHTML = text
+//     document.getElementById("readBtn").style.display="none"
+//     para.innerHTML += text
 // }
 //question 3
+// function edit_row(no)
+// {
+//     document.getElementById("edit_button"+no).style.display="none";
+//     document.getElementById("save_button"+no).style.display="block";
+       
+//     var name=document.getElementById("name_row"+no);
+//     var country=document.getElementById("country_row"+no);
+//     var age=document.getElementById("age_row"+no);
+       
+//     var name_data=name.innerHTML;
+//     var country_data=country.innerHTML;
+//     var age_data=age.innerHTML;
+       
+//     name.innerHTML="<input type='text' id='name_text"+no+"' value='"+name_data+"'>";
+//     country.innerHTML="<input type='text' id='country_text"+no+"' value='"+country_data+"'>";
+//     age.innerHTML="<input type='text' id='age_text"+no+"' value='"+age_data+"'>";
+//    }
+   
+//    function save_row(no)
+//    {
+//     var name_val=document.getElementById("name_text"+no).value;
+//     var country_val=document.getElementById("country_text"+no).value;
+//     var age_val=document.getElementById("age_text"+no).value;
+   
+//     document.getElementById("name_row"+no).innerHTML=name_val;
+//     document.getElementById("country_row"+no).innerHTML=country_val;
+//     document.getElementById("age_row"+no).innerHTML=age_val;
+   
+//     document.getElementById("edit_button"+no).style.display="block";
+//     document.getElementById("save_button"+no).style.display="none";
+//    }
+   
+//    function delete_row(no)
+//    {
+//     document.getElementById("row"+no+"").outerHTML="";
+//    }
+   
+   
+
+//Events
+//Chapter 53-57
+//question 1
+// function modalImageShow(e){
+//     var modalImage = document.getElementById("modalImage");
+//     modalImage.src = e.src
+// }
+
+//DOM
+//Chapter 58-67
+//question 1
+//1
+// var mainContent = document.getElementById("main-content");
+// console.log(mainContent)
+//2
+// var mainContentChilds = document.getElementById("main-content")
+// console.log(mainContentChilds.childNodes)
+//3   
+// var mainContentValue =  document.getElementById("main-content").value
+// console.log(mainContentValue)
+//4
+// var firstName = document.getElementById("first-name")
+// firstName.value = "kashish"
+//5
+// var lastName = document.getElementById("last-name")
+// lastName.value = "fatima"
+// var email =  document.getElementById("email")
+// email.value = "abc@gmail.com"
+//question 2
+//1
+//var formContent = document.getElementById("form-content");
+//console.log(formContent.nodeType)
+//2
+//var lastName = document.getElementById("lastName");
+//console.log(lastName.nodeType)
+//var lastNameChild = document.getElementById("lastName");
+//console.log(lastNameChild.childNodes[0].nodeType)
+//3 
+//couldnot do it
+//4
+// var a = document.getElementById("main-content");
+// console.log(a.firstChild)
+// var a = document.getElementById("main-content");
+// console.log(a.lastChild)
+//5
+// var a = document.getElementById("main-content");
+// console.log(a.firstChild)
+// var b = document.getElementById("lastName")
+// console.log(b.nextSibling)   
+//6
+// var c = document.getElementById("email");
+// console.log(c.parentNode)
+// console.log(c.nodeType)
+    

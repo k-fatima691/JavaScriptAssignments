@@ -33,3 +33,12 @@
     margin-left: 210%;
     margin-right: 15%;
 }
+.modelimage{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.modelImagesize{
+    width: 400px;
+    height: 400px;
+}
